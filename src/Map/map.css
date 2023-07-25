@@ -1,0 +1,93 @@
+/* Estilos para o componente de mapa */
+.map {
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-container {
+  height: 100%;
+}
+
+/* Estilos para as info-flag */
+.info-flag img {
+  width: 80px; /* Reduzir o tamanho das bandeiras para 80px */
+  height: 80px; /* Reduzir o tamanho das bandeiras para 80px */
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Estilos para as info-flag (container) */
+.info-flag {
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Estilos para o nome do país */
+.info-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Estilos para as informações (casos confirmados, recuperados e mortes) */
+.info-confirmed,
+.info-recovered,
+.info-deaths {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Estilos para o container de informações */
+.info-container {
+  width: 150px;
+}
+
+/* Estilos para os info-boxes */
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.infoBox:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 10px;
+}
+
+.infoBox--selected {
+  border-top: 10px solid greenyellow;
+}
+
+.infoBox--red {
+  border-color: red;
+}
+
+.infoBox__cases--green {
+  color: lightgreen !important;
+}
+
+.infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  margin-top: 15px !important;
+}
